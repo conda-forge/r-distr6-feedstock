@@ -34,20 +34,20 @@ requirements:
   host:
     - r-base
     - r-r6
-    - r-r62s3 >=1.4.0
     - r-rcpp
     - r-checkmate
     - r-data.table
-    - r-set6 >=0.2.0
+    - r-param6 >=0.2.1
+    - r-set6 >=0.2.3
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-r6
-    - r-r62s3 >=1.4.0
     - r-rcpp
     - r-checkmate
     - r-data.table
-    - r-set6 >=0.2.0
+    - r-param6 >=0.2.1
+    - r-set6 >=0.2.3
 
 test:
   commands:
