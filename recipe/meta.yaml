@@ -1,4 +1,4 @@
-{% set version = "1.5.6" %}
+{% set version = "1.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distr6_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distr6/distr6_{{ version }}.tar.gz
-  sha256: 980022d189600720cbba8b4513443c8d8dffdefd8de45493c8bb9c700b3beb28
+  sha256: c99cfde444942ab8aab9c38a4e04ee798696084664167aa950e1f0ead3d129d5
 
 build:
   merge_build_host: true  # [win]
@@ -34,20 +34,20 @@ requirements:
   host:
     - r-base
     - r-r6
-    - r-r62s3 >=1.4.0
     - r-rcpp
     - r-checkmate
     - r-data.table
-    - r-set6 >=0.2.0
+    - r-param6 >=0.2.1
+    - r-set6 >=0.2.3
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-r6
-    - r-r62s3 >=1.4.0
     - r-rcpp
     - r-checkmate
     - r-data.table
-    - r-set6 >=0.2.0
+    - r-param6 >=0.2.1
+    - r-set6 >=0.2.3
 
 test:
   commands:
