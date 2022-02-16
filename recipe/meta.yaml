@@ -1,4 +1,4 @@
-{% set version = "1.6.4" %}
+{% set version = "1.6.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distr6_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distr6/distr6_{{ version }}.tar.gz
-  sha256: 47fcd17d53f1e88ce1f6da8aa8b44d2290b86a05d2de2343bf8448cdaa202ec0
+  sha256: e951b9fbecbfff4c2bb2bd5edf0ee73dcc69e1db2947ddf6d3bea5d7ae2e86d0
 
 build:
   merge_build_host: true  # [win]
