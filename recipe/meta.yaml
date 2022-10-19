@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/alan-turing-institute/distr6/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 10b7545813be12cdefcf5ea9465845d6ca90dd75365fd35b4f263c90c1eb88ee
+  sha256: b759faf1acee2bfa9ff26aca394647e4ba361ff609c326e3142143f7a934743d
 
 build:
   merge_build_host: true  # [win]
