@@ -1,4 +1,4 @@
-{% set version = "1.6.11" %}
+{% set version = "1.6.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/alan-turing-institute/distr6/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b759faf1acee2bfa9ff26aca394647e4ba361ff609c326e3142143f7a934743d
+  sha256: e5dda460417395e0cdbf13270d7e59f7cfbcd8055f82505fb756969962ea1334
 
 build:
   merge_build_host: true  # [win]
