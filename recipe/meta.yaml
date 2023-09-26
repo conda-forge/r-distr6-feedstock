@@ -7,7 +7,7 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  url: https://github.com/alan-turing-institute/distr6/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://github.com/xoopR/distr6/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 21fe0d6b157c4ad0949694556483abc47c635544aa3bb8fdad30b38a68d4a1e4
 
 build:
@@ -31,21 +31,23 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-r6
-    - r-rcpp
     - r-checkmate
     - r-data.table
-    - r-param6 >=0.2.1
-    - r-set6 >=0.2.3
+    - r-ooplah
+    - r-param6 >=0.2.4
+    - r-r6
+    - r-rcpp
+    - r-set6 >=0.2.6
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-r6
-    - r-rcpp
     - r-checkmate
     - r-data.table
-    - r-param6 >=0.2.1
-    - r-set6 >=0.2.3
+    - r-ooplah
+    - r-param6 >=0.2.4
+    - r-r6
+    - r-rcpp
+    - r-set6 >=0.2.6
 
 test:
   commands:
