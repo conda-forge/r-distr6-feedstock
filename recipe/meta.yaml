@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://raphaels1.r-universe.dev/src/contrib/distr6_{{ version }}.tar.gz
-  sha256: 10bffb2ca99b32d9c5d5cb2aaa0855e5f11c43ca464bbca25e86e32314fc6089
+  sha256: 71db559a7b769d6fe04732247b1eef74d7e5bfcf92bf6b954882c81c2af92c4c
 
 build:
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
